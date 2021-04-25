@@ -13,31 +13,12 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L MCU_ST_STM32L0:STM32L011F3Px U?
-U 1 1 607E1789
-P 5750 3250
-F 0 "U?" H 5700 2361 50  0000 C CNN
-F 1 "STM32L011F3Px" H 5700 2270 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 5350 2550 50  0001 R CNN
-F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00206508.pdf" H 5750 3250 50  0001 C CNN
-	1    5750 3250
-	1    0    0    -1  
-$EndComp
 Text Label 4450 2750 0    50   ~ 0
 NRST
-Wire Wire Line
-	5250 2750 4450 2750
-Text Label 4450 3450 0    50   ~ 0
-PC14-OSC32IN
-Text Label 4450 3750 0    50   ~ 0
-PB1
-Wire Wire Line
-	5250 3750 4450 3750
 Text Label 4450 3850 0    50   ~ 0
+PB1
+Text Label 4450 2950 0    50   ~ 0
 PB9-BOOT0
-Wire Wire Line
-	4450 3850 5250 3850
 Text Label 6700 2750 0    50   ~ 0
 PA0-CK_IN
 Text Label 6700 2850 0    50   ~ 0
@@ -62,28 +43,6 @@ Text Label 6700 3750 0    50   ~ 0
 PA13
 Text Label 6700 3850 0    50   ~ 0
 PA14
-Wire Wire Line
-	6150 2850 6700 2850
-Wire Wire Line
-	6150 2950 6700 2950
-Wire Wire Line
-	6150 3050 6700 3050
-Wire Wire Line
-	6150 3150 6700 3150
-Wire Wire Line
-	6150 3250 6700 3250
-Wire Wire Line
-	6150 3350 6700 3350
-Wire Wire Line
-	6150 3450 6700 3450
-Wire Wire Line
-	6150 3550 6700 3550
-Wire Wire Line
-	6150 3650 6700 3650
-Wire Wire Line
-	6150 3750 6700 3750
-Wire Wire Line
-	6150 3850 6700 3850
 $Comp
 L power:GND #PWR?
 U 1 1 607E9570
@@ -276,8 +235,6 @@ Wire Wire Line
 Wire Wire Line
 	7150 3600 7150 2750
 Wire Wire Line
-	6150 2750 7150 2750
-Wire Wire Line
 	8850 3050 8850 3100
 $Comp
 L power:GND #PWR?
@@ -343,7 +300,7 @@ Wire Wire Line
 	8050 2800 8450 2800
 Wire Wire Line
 	8450 2800 8450 2750
-Text Label 4450 3550 0    50   ~ 0
+Text Label 4450 3650 0    50   ~ 0
 PC15-OSC32_OUT
 $Comp
 L Device:Crystal_GND23 Y?
@@ -355,17 +312,6 @@ F 2 "" H 2850 3750 50  0001 C CNN
 F 3 "~" H 2850 3750 50  0001 C CNN
 	1    2850 3750
 	0    1    1    0   
-$EndComp
-$Comp
-L Device:Jumper JP?
-U 1 1 60861856
-P 3300 3450
-F 0 "JP?" H 3300 3714 50  0000 C CNN
-F 1 "Jumper" H 3300 3623 50  0000 C CNN
-F 2 "" H 3300 3450 50  0001 C CNN
-F 3 "~" H 3300 3450 50  0001 C CNN
-	1    3300 3450
-	1    0    0    -1  
 $EndComp
 $Comp
 L pspice:CAP C?
@@ -393,11 +339,9 @@ Wire Wire Line
 	2850 3600 2850 3450
 Wire Wire Line
 	2850 3450 2550 3450
-Wire Wire Line
-	3000 3450 2850 3450
 Connection ~ 2850 3450
 Wire Wire Line
-	3150 4150 2850 4150
+	3200 4150 2850 4150
 Wire Wire Line
 	2850 4150 2850 3900
 Wire Wire Line
@@ -410,9 +354,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 4150 2050 4150
 Wire Wire Line
-	4250 4150 4250 3550
-Wire Wire Line
-	4250 3550 5250 3550
+	4250 4150 4250 3650
 $Comp
 L power:GND #PWR?
 U 1 1 60879536
@@ -427,21 +369,6 @@ $EndComp
 Wire Wire Line
 	1900 4150 1900 4300
 Connection ~ 1900 4150
-$Comp
-L Device:R_US R?
-U 1 1 6085EB60
-P 3300 4150
-F 0 "R?" V 3095 4150 50  0000 C CNN
-F 1 "0" H 3186 4150 50  0000 C CNN
-F 2 "" V 3340 4140 50  0001 C CNN
-F 3 "~" H 3300 4150 50  0001 C CNN
-	1    3300 4150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	3600 3450 5250 3450
-Wire Wire Line
-	3450 4150 4250 4150
 $Comp
 L Connector:Conn_01x10_Male J?
 U 1 1 60894859
@@ -562,8 +489,6 @@ NRST
 Wire Wire Line
 	3750 5150 3150 5150
 Wire Wire Line
-	3150 5850 3500 5850
-Wire Wire Line
 	3500 5950 3150 5950
 $Comp
 L power:GND #PWR?
@@ -579,8 +504,82 @@ $EndComp
 Wire Wire Line
 	3500 5950 3500 6150
 Wire Wire Line
-	3500 5850 3500 5950
-Connection ~ 3500 5950
-Wire Wire Line
 	6400 5000 6950 5000
+$Comp
+L Device:Jumper JP?
+U 1 1 60875E00
+P 3500 4150
+F 0 "JP?" H 3500 4414 50  0000 C CNN
+F 1 "Jumper" H 3500 4323 50  0000 C CNN
+F 2 "" H 3500 4150 50  0001 C CNN
+F 3 "~" H 3500 4150 50  0001 C CNN
+	1    3500 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_ST_STM32L0:STM32L031F6Px U?
+U 1 1 6087A076
+P 5650 3250
+F 0 "U?" H 5650 2361 50  0000 C CNN
+F 1 "STM32L031F6Px" H 5650 2270 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 5250 2550 50  0001 R CNN
+F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00140359.pdf" H 5650 3250 50  0001 C CNN
+	1    5650 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 4150 3800 4150
+Wire Wire Line
+	6150 2750 7150 2750
+Wire Wire Line
+	6150 3850 6700 3850
+Wire Wire Line
+	6150 3750 6700 3750
+Wire Wire Line
+	6150 3650 6700 3650
+Wire Wire Line
+	6150 3550 6700 3550
+Wire Wire Line
+	6150 3450 6700 3450
+Wire Wire Line
+	6150 3350 6700 3350
+Wire Wire Line
+	6150 3250 6700 3250
+Wire Wire Line
+	6150 3150 6700 3150
+Wire Wire Line
+	6150 3050 6700 3050
+Wire Wire Line
+	6150 2950 6700 2950
+Wire Wire Line
+	6150 2850 6700 2850
+Wire Wire Line
+	3200 3450 2850 3450
+$Comp
+L Device:Jumper JP?
+U 1 1 60861856
+P 3500 3450
+F 0 "JP?" H 3500 3714 50  0000 C CNN
+F 1 "Jumper" H 3500 3623 50  0000 C CNN
+F 2 "" H 3500 3450 50  0001 C CNN
+F 3 "~" H 3500 3450 50  0001 C CNN
+	1    3500 3450
+	1    0    0    -1  
+$EndComp
+Text Label 4450 3550 0    50   ~ 0
+PC14-OSC32IN
+Wire Wire Line
+	4450 2950 5150 2950
+Wire Wire Line
+	4250 3650 5150 3650
+Wire Wire Line
+	3800 3450 4250 3450
+Wire Wire Line
+	5150 3550 4250 3550
+Wire Wire Line
+	4250 3550 4250 3450
+Wire Wire Line
+	4450 3850 5150 3850
+Wire Wire Line
+	5150 2750 4450 2750
 $EndSCHEMATC
