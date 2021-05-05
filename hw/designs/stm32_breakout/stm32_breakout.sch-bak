@@ -95,9 +95,6 @@ Wire Wire Line
 	4850 2400 4850 2200
 Wire Wire Line
 	5300 2200 5300 2400
-Connection ~ 5300 2400
-Wire Wire Line
-	5300 2400 4850 2400
 Wire Wire Line
 	5300 1700 5300 1500
 Wire Wire Line
@@ -180,10 +177,7 @@ F 3 "https://www.diodes.com/assets/Datasheets/AP7361C.pdf" H 3000 2350 50  0001 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3300 2400 3750 2400
-Wire Wire Line
 	5650 2400 5650 2550
-Connection ~ 4850 2400
 $Comp
 L power:GND #PWR?
 U 1 1 60812C1A
@@ -198,7 +192,7 @@ $EndComp
 Wire Wire Line
 	3000 2700 3000 2900
 $Comp
-L Connector:USB_B_Micro J?
+L stm32_breakout-rescue:USB_B_Micro-Connector-stm32_breakout-rescue J?
 U 1 1 60814F1F
 P 1850 2600
 F 0 "J?" H 1907 3067 50  0000 C CNN
@@ -231,7 +225,7 @@ Wire Wire Line
 	1850 3100 1800 3100
 Connection ~ 1800 3100
 Wire Wire Line
-	2700 2400 2150 2400
+	2700 2400 2500 2400
 Wire Wire Line
 	7150 3600 7150 2750
 Wire Wire Line
@@ -254,7 +248,7 @@ Wire Wire Line
 Wire Wire Line
 	8850 2450 8850 2400
 $Comp
-L kc2016z:KC2016Z U?
+L stm32_breakout-rescue:KC2016Z-kc2016z-stm32_breakout-rescue U?
 U 1 1 6081180B
 P 8850 2750
 F 0 "U?" H 9294 2796 50  0000 L CNN
@@ -456,19 +450,19 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR?
 U 1 1 60904649
-P 3750 2150
-F 0 "#PWR?" H 3750 2000 50  0001 C CNN
-F 1 "+3.3V" H 3765 2323 50  0000 C CNN
-F 2 "" H 3750 2150 50  0001 C CNN
-F 3 "" H 3750 2150 50  0001 C CNN
-	1    3750 2150
+P 4000 2250
+F 0 "#PWR?" H 4000 2100 50  0001 C CNN
+F 1 "+3.3V" H 4015 2423 50  0000 C CNN
+F 2 "" H 4000 2250 50  0001 C CNN
+F 3 "" H 4000 2250 50  0001 C CNN
+	1    4000 2250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3750 2150 3750 2400
-Connection ~ 3750 2400
+	4000 2250 4000 2400
+Connection ~ 4000 2400
 Wire Wire Line
-	3750 2400 4850 2400
+	4000 2400 4850 2400
 $Comp
 L power:+3.3V #PWR?
 U 1 1 6090C2FF
@@ -582,4 +576,64 @@ Wire Wire Line
 	4450 3850 5150 3850
 Wire Wire Line
 	5150 2750 4450 2750
+$Comp
+L pspice:C C?
+U 1 1 60868E65
+P 2500 1900
+F 0 "C?" H 2678 1946 50  0000 L CNN
+F 1 "4.7u" H 2678 1855 50  0000 L CNN
+F 2 "" H 2500 1900 50  0001 C CNN
+F 3 "~" H 2500 1900 50  0001 C CNN
+	1    2500 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:CAP C?
+U 1 1 608699C3
+P 3450 1900
+F 0 "C?" H 3628 1946 50  0000 L CNN
+F 1 "4.7u" H 3628 1855 50  0000 L CNN
+F 2 "" H 3450 1900 50  0001 C CNN
+F 3 "~" H 3450 1900 50  0001 C CNN
+	1    3450 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4850 2400 5300 2400
+Connection ~ 4850 2400
+Connection ~ 5300 2400
+Wire Wire Line
+	3300 2400 3450 2400
+Wire Wire Line
+	3450 2400 3450 2150
+Wire Wire Line
+	3450 2400 4000 2400
+Connection ~ 3450 2400
+Wire Wire Line
+	2500 2150 2500 2400
+Connection ~ 2500 2400
+Wire Wire Line
+	2500 2400 2150 2400
+Wire Wire Line
+	3450 1650 3450 1500
+Wire Wire Line
+	2500 1650 2500 1500
+$Comp
+L power:GND #PWR?
+U 1 1 608998B1
+P 4100 1700
+F 0 "#PWR?" H 4100 1450 50  0001 C CNN
+F 1 "GND" H 4105 1527 50  0000 C CNN
+F 2 "" H 4100 1700 50  0001 C CNN
+F 3 "" H 4100 1700 50  0001 C CNN
+	1    4100 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 1500 4100 1700
+Wire Wire Line
+	3450 1500 4100 1500
+Wire Wire Line
+	2500 1500 3450 1500
+Connection ~ 3450 1500
 $EndSCHEMATC
