@@ -253,7 +253,7 @@ U 1 1 6081180B
 P 8850 2750
 F 0 "U3" H 9294 2796 50  0000 L CNN
 F 1 "KC2016Z" H 9294 2705 50  0000 L CNN
-F 2 "" H 9000 2900 50  0001 C CNN
+F 2 "Custom:KC2016Z" H 9000 2900 50  0001 C CNN
 F 3 "https://global.kyocera.com/prdct/electro/product/pdf/clock_z_xz_e.pdf" H 9000 2900 50  0001 C CNN
 	1    8850 2750
 	1    0    0    -1  
