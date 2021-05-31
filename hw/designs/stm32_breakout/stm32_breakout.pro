@@ -1,4 +1,4 @@
-update=Sat 29 May 2021 08:31:58 PM EDT
+update=Sun 30 May 2021 09:15:12 PM EDT
 version=1
 last_client=kicad
 [general]
@@ -56,7 +56,7 @@ CopperTextSizeH=1.5
 CopperTextThickness=0.3
 CopperTextItalic=0
 CopperTextUpright=1
-EdgeCutLineWidth=0.05
+EdgeCutLineWidth=0.09999999999999999
 CourtyardLineWidth=0.05
 OthersLineWidth=0.15
 OthersTextSizeV=1
@@ -67,7 +67,7 @@ OthersTextUpright=1
 SolderMaskClearance=0
 SolderMaskMinWidth=0
 SolderPasteClearance=0
-SolderPasteRatio=0
+SolderPasteRatio=-0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
@@ -233,7 +233,7 @@ Enabled=1
 [pcbnew/Layer.F.Fab]
 Enabled=1
 [pcbnew/Layer.Rescue]
-Enabled=1
+Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default

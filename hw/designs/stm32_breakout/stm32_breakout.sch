@@ -263,17 +263,6 @@ Wire Wire Line
 Connection ~ 6500 2400
 Wire Wire Line
 	7150 3600 9700 3600
-$Comp
-L Connector:Conn_01x03_Male J4
-U 1 1 6083CA4A
-P 7850 2800
-F 0 "J4" H 7958 3081 50  0000 C CNN
-F 1 "Conn_01x03_Male" H 7958 2990 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 7850 2800 50  0001 C CNN
-F 3 "~" H 7850 2800 50  0001 C CNN
-	1    7850 2800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8050 2700 8300 2700
 Wire Wire Line
@@ -291,78 +280,9 @@ Connection ~ 8850 3100
 Wire Wire Line
 	8850 3100 8850 3250
 Wire Wire Line
-	8050 2800 8450 2800
-Wire Wire Line
 	8450 2800 8450 2750
 Text Label 4450 3650 0    50   ~ 0
 PC15-OSC32_OUT
-$Comp
-L Device:Crystal_GND23 Y1
-U 1 1 60849DF1
-P 2850 3750
-F 0 "Y1" V 2804 3994 50  0000 L CNN
-F 1 "ABS25-32.768KHZ-6-T" V 2895 3994 50  0000 L CNN
-F 2 "Custom:XTAL_ABS25-32.768KHZ-6-1-T" H 2850 3750 50  0001 C CNN
-F 3 "~" H 2850 3750 50  0001 C CNN
-	1    2850 3750
-	0    1    1    0   
-$EndComp
-$Comp
-L pspice:CAP C1
-U 1 1 60862421
-P 2300 3450
-F 0 "C1" V 1985 3450 50  0000 C CNN
-F 1 "4.3pF" V 2076 3450 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2300 3450 50  0001 C CNN
-F 3 "~" H 2300 3450 50  0001 C CNN
-	1    2300 3450
-	0    1    1    0   
-$EndComp
-$Comp
-L pspice:CAP C2
-U 1 1 608657C5
-P 2300 4150
-F 0 "C2" V 1985 4150 50  0000 C CNN
-F 1 "4.3pF" V 2076 4150 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 2300 4150 50  0001 C CNN
-F 3 "~" H 2300 4150 50  0001 C CNN
-	1    2300 4150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2850 3600 2850 3450
-Wire Wire Line
-	2850 3450 2550 3450
-Connection ~ 2850 3450
-Wire Wire Line
-	3200 4150 2850 4150
-Wire Wire Line
-	2850 4150 2850 3900
-Wire Wire Line
-	2850 4150 2550 4150
-Connection ~ 2850 4150
-Wire Wire Line
-	2050 3450 1900 3450
-Wire Wire Line
-	1900 3450 1900 4150
-Wire Wire Line
-	1900 4150 2050 4150
-Wire Wire Line
-	4250 4150 4250 3650
-$Comp
-L power:GND #PWR0107
-U 1 1 60879536
-P 1900 4300
-F 0 "#PWR0107" H 1900 4050 50  0001 C CNN
-F 1 "GND" H 1905 4127 50  0000 C CNN
-F 2 "" H 1900 4300 50  0001 C CNN
-F 3 "" H 1900 4300 50  0001 C CNN
-	1    1900 4300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1900 4150 1900 4300
-Connection ~ 1900 4150
 $Comp
 L Connector:Conn_01x10_Male J3
 U 1 1 60894859
@@ -393,21 +313,13 @@ Text Label 6950 5200 0    50   ~ 0
 PA2
 Text Label 6950 5300 0    50   ~ 0
 PA3
-Text Label 6950 5400 0    50   ~ 0
-PA4
-Text Label 6950 5500 0    50   ~ 0
-PA5
-Text Label 6950 5600 0    50   ~ 0
-PA6
 Text Label 6950 5700 0    50   ~ 0
 PA7
-Text Label 6950 5800 0    50   ~ 0
+Text Label 3650 5850 0    50   ~ 0
 PA9
-Text Label 6950 5900 0    50   ~ 0
-PA10
-Text Label 3750 5250 0    50   ~ 0
+Text Label 3650 5550 0    50   ~ 0
 PA13
-Text Label 3750 5350 0    50   ~ 0
+Text Label 3650 5650 0    50   ~ 0
 PA14
 Wire Wire Line
 	6400 5100 6950 5100
@@ -416,37 +328,15 @@ Wire Wire Line
 Wire Wire Line
 	6400 5300 6950 5300
 Wire Wire Line
-	6400 5400 6950 5400
-Wire Wire Line
-	6400 5500 6950 5500
-Wire Wire Line
-	6400 5600 6950 5600
-Wire Wire Line
 	6400 5700 6950 5700
-Wire Wire Line
-	6400 5800 6950 5800
-Wire Wire Line
-	6400 5900 6950 5900
-Wire Wire Line
-	3150 5250 3750 5250
-Wire Wire Line
-	3150 5350 3750 5350
-Text Label 3750 5450 0    50   ~ 0
+Text Label 3650 5350 0    50   ~ 0
 PC14-OSC32IN
-Text Label 3750 5650 0    50   ~ 0
+Text Label 6950 5800 0    50   ~ 0
 PB1
-Text Label 3750 5750 0    50   ~ 0
+Text Label 3650 5450 0    50   ~ 0
 PB9-BOOT0
-Text Label 3750 5550 0    50   ~ 0
+Text Label 3650 5250 0    50   ~ 0
 PC15-OSC32_OUT
-Wire Wire Line
-	3150 5450 3750 5450
-Wire Wire Line
-	3150 5550 3750 5550
-Wire Wire Line
-	3150 5650 3750 5650
-Wire Wire Line
-	3150 5750 3750 5750
 $Comp
 L power:+3.3V #PWR0108
 U 1 1 60904649
@@ -466,50 +356,31 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR0109
 U 1 1 6090C2FF
-P 3500 4850
-F 0 "#PWR0109" H 3500 4700 50  0001 C CNN
-F 1 "+3.3V" H 3515 5023 50  0000 C CNN
-F 2 "" H 3500 4850 50  0001 C CNN
-F 3 "" H 3500 4850 50  0001 C CNN
-	1    3500 4850
+P 4250 5700
+F 0 "#PWR0109" H 4250 5550 50  0001 C CNN
+F 1 "+3.3V" H 4265 5873 50  0000 C CNN
+F 2 "" H 4250 5700 50  0001 C CNN
+F 3 "" H 4250 5700 50  0001 C CNN
+	1    4250 5700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3500 4850 3500 5050
-Wire Wire Line
-	3500 5050 3150 5050
-Text Label 3750 5150 0    50   ~ 0
+Text Label 3650 5150 0    50   ~ 0
 NRST
-Wire Wire Line
-	3750 5150 3150 5150
-Wire Wire Line
-	3500 5950 3150 5950
 $Comp
 L power:GND #PWR0110
 U 1 1 6091C1DA
-P 3500 6150
-F 0 "#PWR0110" H 3500 5900 50  0001 C CNN
-F 1 "GND" H 3505 5977 50  0000 C CNN
-F 2 "" H 3500 6150 50  0001 C CNN
-F 3 "" H 3500 6150 50  0001 C CNN
-	1    3500 6150
+P 6800 6100
+F 0 "#PWR0110" H 6800 5850 50  0001 C CNN
+F 1 "GND" H 6805 5927 50  0000 C CNN
+F 2 "" H 6800 6100 50  0001 C CNN
+F 3 "" H 6800 6100 50  0001 C CNN
+	1    6800 6100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 5950 3500 6150
+	6800 5900 6800 6100
 Wire Wire Line
 	6400 5000 6950 5000
-$Comp
-L Device:Jumper JP2
-U 1 1 60875E00
-P 3500 4150
-F 0 "JP2" H 3500 4414 50  0000 C CNN
-F 1 "Jumper" H 3500 4323 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3500 4150 50  0001 C CNN
-F 3 "~" H 3500 4150 50  0001 C CNN
-	1    3500 4150
-	1    0    0    -1  
-$EndComp
 $Comp
 L MCU_ST_STM32L0:STM32L031F6Px U2
 U 1 1 6087A076
@@ -521,8 +392,6 @@ F 3 "http://www.st.com/st-web-ui/static/active/en/resource/technical/document/da
 	1    5650 3250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4250 4150 3800 4150
 Wire Wire Line
 	6150 2750 7150 2750
 Wire Wire Line
@@ -547,31 +416,10 @@ Wire Wire Line
 	6150 2950 6700 2950
 Wire Wire Line
 	6150 2850 6700 2850
-Wire Wire Line
-	3200 3450 2850 3450
-$Comp
-L Device:Jumper JP1
-U 1 1 60861856
-P 3500 3450
-F 0 "JP1" H 3500 3714 50  0000 C CNN
-F 1 "Jumper" H 3500 3623 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" H 3500 3450 50  0001 C CNN
-F 3 "~" H 3500 3450 50  0001 C CNN
-	1    3500 3450
-	1    0    0    -1  
-$EndComp
 Text Label 4450 3550 0    50   ~ 0
 PC14-OSC32IN
 Wire Wire Line
 	4450 2950 5150 2950
-Wire Wire Line
-	4250 3650 5150 3650
-Wire Wire Line
-	3800 3450 4250 3450
-Wire Wire Line
-	5150 3550 4250 3550
-Wire Wire Line
-	4250 3550 4250 3450
 Wire Wire Line
 	4450 3850 5150 3850
 Wire Wire Line
@@ -684,10 +532,87 @@ Wire Wire Line
 	1550 1750 1550 1850
 NoConn ~ 900  3950
 NoConn ~ 1750 4900
-NoConn ~ 3150 5850
 NoConn ~ 2150 2600
 NoConn ~ 2150 2700
 NoConn ~ 2150 2800
-NoConn ~ 2650 3750
-NoConn ~ 3050 3750
+Wire Wire Line
+	3150 5950 4250 5950
+Wire Wire Line
+	4250 5700 4250 5950
+Wire Wire Line
+	6400 5600 6950 5600
+Wire Wire Line
+	6400 5400 6950 5400
+Text Label 6950 5600 0    50   ~ 0
+PA5
+Text Label 6950 5400 0    50   ~ 0
+PA4
+Wire Wire Line
+	6400 5500 6950 5500
+Text Label 6950 5500 0    50   ~ 0
+PA6
+Wire Wire Line
+	6400 5800 6950 5800
+Wire Wire Line
+	6400 5900 6800 5900
+Wire Wire Line
+	3150 5850 3650 5850
+Wire Wire Line
+	3150 5750 3650 5750
+Wire Wire Line
+	3150 5650 3650 5650
+Wire Wire Line
+	3150 5550 3650 5550
+Wire Wire Line
+	3150 5450 3650 5450
+Wire Wire Line
+	3150 5350 3650 5350
+Wire Wire Line
+	3150 5250 3650 5250
+Wire Wire Line
+	3650 5150 3150 5150
+NoConn ~ 3150 5050
+Text Label 3650 5750 0    50   ~ 0
+PA10
+Wire Wire Line
+	5150 3550 4450 3550
+Wire Wire Line
+	5150 3650 4450 3650
+$Comp
+L Device:R_US R2
+U 1 1 60D02F65
+P 7600 2650
+F 0 "R2" H 7668 2696 50  0000 L CNN
+F 1 "0" H 7668 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7640 2640 50  0001 C CNN
+F 3 "~" H 7600 2650 50  0001 C CNN
+	1    7600 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R3
+U 1 1 60D10526
+P 7600 3100
+F 0 "R3" H 7668 3146 50  0000 L CNN
+F 1 "UNPOP" H 7668 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7640 3090 50  0001 C CNN
+F 3 "~" H 7600 3100 50  0001 C CNN
+	1    7600 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 2700 8050 2500
+Wire Wire Line
+	8050 2500 7600 2500
+Wire Wire Line
+	7600 2800 7600 2950
+Wire Wire Line
+	7600 2800 8450 2800
+Connection ~ 7600 2800
+Wire Wire Line
+	7600 3250 8050 3250
+Wire Wire Line
+	8050 3250 8050 2900
+Text Notes 8200 2200 0    50   ~ 0
+Use KC2016Z: R2 = 0, R3 = UNPOP\nUse Internal Clock: R2 = UNPOP, R3 = 0
 $EndSCHEMATC
