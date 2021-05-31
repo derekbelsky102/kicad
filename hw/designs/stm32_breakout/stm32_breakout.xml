@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/derek/kicad/hw/designs/stm32_breakout/stm32_breakout.sch</source>
+    <date>Mon 31 May 2021 10:56:43 AM EDT</date>
+    <tool>Eeschema 5.1.9-73d0e3b20d~88~ubuntu20.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>stm32_breakout.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C3">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>607E9DE9</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>100nF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>607ECA39</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>1uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>607ECE2C</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>10uF</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>607EC639</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>AP7361C-33E</value>
+      <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
+      <datasheet>https://www.diodes.com/assets/Datasheets/AP7361C.pdf</datasheet>
+      <libsource lib="Regulator_Linear" part="AP7361C-33E" description="1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>608118E6</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>USB_B_Micro</value>
+      <footprint>Connector_USB:USB_Micro-B_Molex_47346-0001</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="stm32_breakout-rescue" part="USB_B_Micro-Connector-stm32_breakout-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60814F1F</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>KC2016Z</value>
+      <footprint>Custom:KC2016Z</footprint>
+      <datasheet>https://global.kyocera.com/prdct/electro/product/pdf/clock_z_xz_e.pdf</datasheet>
+      <libsource lib="stm32_breakout-rescue" part="KC2016Z-kc2016z-stm32_breakout-rescue" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6081180B</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Conn_01x10_Male</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x10_Male" description="Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60894859</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Conn_01x10_Male</value>
+      <footprint>Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="Conn_01x10_Male" description="Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60898F4F</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>STM32L031F6Px</value>
+      <footprint>Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm</footprint>
+      <datasheet>http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00140359.pdf</datasheet>
+      <libsource lib="MCU_ST_STM32L0" part="STM32L031F6Px" description="ARM Cortex-M0+ MCU, 32KB flash, 8KB RAM, 32MHz, 1.65-3.6V, 15 GPIO, TSSOP-20"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6087A076</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>4.7u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="pspice" part="C" description="Capacitor symbol for simulation only"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60868E65</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>4.7u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="pspice" part="CAP" description="Capacitor symbol for simulation only"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>608699C3</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>200</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60937DDE</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED" description="Light emitting diode"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60938A45</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>0</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D02F65</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>UNPOP</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_US" description="Resistor, US symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60D10526</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector" part="Conn_01x10_Male">
+      <description>Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x10_Male</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+        <pin num="7" name="Pin_7" type="passive"/>
+        <pin num="8" name="Pin_8" type="passive"/>
+        <pin num="9" name="Pin_9" type="passive"/>
+        <pin num="10" name="Pin_10" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="LED">
+      <description>Light emitting diode</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>LED*</fp>
+        <fp>LED_SMD:*</fp>
+        <fp>LED_THT:*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Device" part="R_US">
+      <description>Resistor, US symbol</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_US</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="MCU_ST_STM32L0" part="STM32L031F4Px">
+      <aliases>
+        <alias>STM32L031F6Px</alias>
+      </aliases>
+      <description>ARM Cortex-M0+ MCU, 16KB flash, 8KB RAM, 32MHz, 1.65-3.6V, 15 GPIO, TSSOP-20</description>
+      <docs>http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00140359.pdf</docs>
+      <footprints>
+        <fp>TSSOP*4.4x6.5mm*P0.65mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">STM32L031F4Px</field>
+        <field name="Footprint">Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="BOOT0" type="input"/>
+        <pin num="2" name="PC14" type="BiDi"/>
+        <pin num="3" name="PC15" type="BiDi"/>
+        <pin num="4" name="NRST" type="input"/>
+        <pin num="5" name="VDDA" type="power_in"/>
+        <pin num="6" name="PA0" type="BiDi"/>
+        <pin num="7" name="PA1" type="BiDi"/>
+        <pin num="8" name="PA2" type="BiDi"/>
+        <pin num="9" name="PA3" type="BiDi"/>
+        <pin num="10" name="PA4" type="BiDi"/>
+        <pin num="11" name="PA5" type="BiDi"/>
+        <pin num="12" name="PA6" type="BiDi"/>
+        <pin num="13" name="PA7" type="BiDi"/>
+        <pin num="14" name="PB1" type="BiDi"/>
+        <pin num="15" name="VSS" type="power_in"/>
+        <pin num="16" name="VDD" type="power_in"/>
+        <pin num="17" name="PA9" type="BiDi"/>
+        <pin num="18" name="PA10" type="BiDi"/>
+        <pin num="19" name="PA13" type="BiDi"/>
+        <pin num="20" name="PA14" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="SPX2920M3-3.3_SOT223">
+      <aliases>
+        <alias>SPX2920M3-5.0_SOT223</alias>
+        <alias>LT1129-3.3_SOT223</alias>
+        <alias>LT1129-5.0_SOT223</alias>
+        <alias>LM2937xMP</alias>
+        <alias>AP7361C-10E</alias>
+        <alias>AP7361C-12E</alias>
+        <alias>AP7361C-15E</alias>
+        <alias>AP7361C-18E</alias>
+        <alias>AP7361C-25E</alias>
+        <alias>AP7361C-28E</alias>
+        <alias>AP7361C-33E</alias>
+      </aliases>
+      <description>400mA Low drop-out regulator, Fixed Output 3.3V, SOT-223</description>
+      <docs>http://www.zlgmcu.com/Sipex/LDO/PDF/spx2920.pdf</docs>
+      <footprints>
+        <fp>SOT?223*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">SPX2920M3-3.3_SOT223</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-223-3_TabPin2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VI" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="VO" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="pspice" part="CAP">
+      <aliases>
+        <alias>C</alias>
+      </aliases>
+      <description>Capacitor symbol for simulation only</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CAP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="stm32_breakout-rescue" part="KC2016Z-kc2016z-stm32_breakout-rescue">
+      <footprints>
+        <fp>Oscillator*SMD*Kyocera*KC2520Z*2.5x2.0mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">KC2016Z-kc2016z-stm32_breakout-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="INH" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="CLK" type="output"/>
+        <pin num="4" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="stm32_breakout-rescue" part="USB_B_Micro-Connector-stm32_breakout-rescue">
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB_B_Micro-Connector-stm32_breakout-rescue</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="power_out"/>
+        <pin num="2" name="D-" type="BiDi"/>
+        <pin num="3" name="D+" type="BiDi"/>
+        <pin num="4" name="ID" type="passive"/>
+        <pin num="5" name="GND" type="power_out"/>
+        <pin num="6" name="Shield" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector">
+      <uri>/usr/share/kicad/library/Connector.lib</uri>
+    </library>
+    <library logical="Device">
+      <uri>/usr/share/kicad/library/Device.lib</uri>
+    </library>
+    <library logical="MCU_ST_STM32L0">
+      <uri>/usr/share/kicad/library/MCU_ST_STM32L0.lib</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>/usr/share/kicad/library/Regulator_Linear.lib</uri>
+    </library>
+    <library logical="pspice">
+      <uri>/usr/share/kicad/library/pspice.lib</uri>
+    </library>
+    <library logical="stm32_breakout-rescue">
+      <uri>/home/derek/kicad/hw/designs/stm32_breakout/stm32_breakout-rescue.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/PA7">
+      <node ref="J3" pin="8"/>
+      <node ref="U2" pin="13"/>
+    </net>
+    <net code="2" name="/PA9">
+      <node ref="J2" pin="9"/>
+      <node ref="U2" pin="17"/>
+    </net>
+    <net code="3" name="/PA13">
+      <node ref="J2" pin="6"/>
+      <node ref="U2" pin="19"/>
+    </net>
+    <net code="4" name="/PA14">
+      <node ref="J2" pin="7"/>
+      <node ref="U2" pin="20"/>
+    </net>
+    <net code="5" name="/PA3">
+      <node ref="U2" pin="9"/>
+      <node ref="J3" pin="4"/>
+    </net>
+    <net code="6" name="/PA2">
+      <node ref="J3" pin="3"/>
+      <node ref="U2" pin="8"/>
+    </net>
+    <net code="7" name="/PA1">
+      <node ref="J3" pin="2"/>
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="8" name="/PC14-OSC32IN">
+      <node ref="J2" pin="4"/>
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="9" name="GND">
+      <node ref="D1" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="C4" pin="1"/>
+      <node ref="J1" pin="6"/>
+      <node ref="U3" pin="2"/>
+      <node ref="J3" pin="10"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="J1" pin="5"/>
+      <node ref="C1" pin="1"/>
+      <node ref="R3" pin="2"/>
+      <node ref="C2" pin="1"/>
+      <node ref="U2" pin="15"/>
+    </net>
+    <net code="10" name="/PB1">
+      <node ref="J3" pin="9"/>
+      <node ref="U2" pin="14"/>
+    </net>
+    <net code="11" name="/PB9-BOOT0">
+      <node ref="J2" pin="5"/>
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="12" name="/PC15-OSC32_OUT">
+      <node ref="U2" pin="3"/>
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="13" name="/NRST">
+      <node ref="U2" pin="4"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="14" name="/PA5">
+      <node ref="J3" pin="7"/>
+      <node ref="U2" pin="11"/>
+    </net>
+    <net code="15" name="/PA4">
+      <node ref="U2" pin="10"/>
+      <node ref="J3" pin="5"/>
+    </net>
+    <net code="16" name="/PA6">
+      <node ref="U2" pin="12"/>
+      <node ref="J3" pin="6"/>
+    </net>
+    <net code="17" name="/PA10">
+      <node ref="U2" pin="18"/>
+      <node ref="J2" pin="8"/>
+    </net>
+    <net code="18" name="Net-(J2-Pad1)">
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="19" name="Net-(R2-Pad2)">
+      <node ref="U3" pin="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="20" name="+3V3">
+      <node ref="J2" pin="10"/>
+      <node ref="U1" pin="3"/>
+      <node ref="C2" pin="2"/>
+      <node ref="U2" pin="16"/>
+      <node ref="U2" pin="5"/>
+      <node ref="U3" pin="4"/>
+      <node ref="R2" pin="1"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C6" pin="2"/>
+    </net>
+    <net code="21" name="Net-(D1-Pad2)">
+      <node ref="R1" pin="1"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="24" name="Net-(J1-Pad3)">
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="25" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="26" name="Net-(J1-Pad4)">
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="27" name="Net-(C1-Pad2)">
+      <node ref="U1" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="R1" pin="2"/>
+      <node ref="C1" pin="2"/>
+    </net>
+    <net code="28" name="/PA0-CK_IN">
+      <node ref="J3" pin="1"/>
+      <node ref="U2" pin="6"/>
+      <node ref="U3" pin="3"/>
+    </net>
+  </nets>
+</export>
