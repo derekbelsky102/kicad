@@ -165,17 +165,6 @@ F 3 "~" H 5300 1950 50  0001 C CNN
 	1    5300 1950
 	1    0    0    -1  
 $EndComp
-$Comp
-L Regulator_Linear:AP7361C-33E U1
-U 1 1 608118E6
-P 3000 2400
-F 0 "U1" H 3000 2642 50  0000 C CNN
-F 1 "AP7361C-33E" H 3000 2551 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3000 2625 50  0001 C CIN
-F 3 "https://www.diodes.com/assets/Datasheets/AP7361C.pdf" H 3000 2350 50  0001 C CNN
-	1    3000 2400
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5650 2400 5650 2550
 $Comp
@@ -224,8 +213,6 @@ Wire Wire Line
 Wire Wire Line
 	1850 3100 1800 3100
 Connection ~ 1800 3100
-Wire Wire Line
-	2700 2400 2500 2400
 Wire Wire Line
 	7150 3600 7150 2750
 Wire Wire Line
@@ -451,12 +438,9 @@ Wire Wire Line
 Connection ~ 4850 2400
 Connection ~ 5300 2400
 Wire Wire Line
-	3300 2400 3450 2400
-Wire Wire Line
 	3450 2400 3450 2150
 Wire Wire Line
 	3450 2400 4000 2400
-Connection ~ 3450 2400
 Wire Wire Line
 	2500 2150 2500 2400
 Connection ~ 2500 2400
@@ -615,4 +599,20 @@ Wire Wire Line
 	8050 3250 8050 2900
 Text Notes 8200 2200 0    50   ~ 0
 Use KC2016Z: R2 = 0, R3 = UNPOP\nUse Internal Clock: R2 = UNPOP, R3 = 0
+Connection ~ 3450 2400
+Wire Wire Line
+	3300 2400 3450 2400
+Wire Wire Line
+	2700 2400 2500 2400
+$Comp
+L AdekLib:AP7361C-33ER U1
+U 1 1 608118E6
+P 3000 2250
+F 0 "U1" H 3000 2492 50  0000 C CNN
+F 1 "AP7361C-33ER" H 3000 2401 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3000 2475 50  0001 C CIN
+F 3 "https://www.diodes.com/assets/Datasheets/AP7361C.pdf" H 3000 2200 50  0001 C CNN
+	1    3000 2250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
