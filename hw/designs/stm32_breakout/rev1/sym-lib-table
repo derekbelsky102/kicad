@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name stm32_breakout-rescue)(type Legacy)(uri ${KIPRJMOD}/stm32_breakout-rescue.lib)(options "")(descr ""))
+  (lib (name AdekLib)(type Legacy)(uri ${KIPRJMOD}/AdekLib.lib)(options "")(descr ""))
+)
