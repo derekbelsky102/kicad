@@ -430,7 +430,8 @@ P 1350 1750
 F 0 "D1" H 1343 1967 50  0000 C CNN
 F 1 "LED" H 1343 1876 50  0000 C CNN
 F 2 "LED_SMD:LED_0805_2012Metric" H 1350 1750 50  0001 C CNN
-F 3 "~" H 1350 1750 50  0001 C CNN
+F 3 "https://www.aopled.com/AOP_PDFs/L171L-LPGC.pdf" H 1350 1750 50  0001 C CNN
+F 4 "https://www.digikey.comproducts/detail/american-opto-plus-led/L171L-LPGC/12325399" H 1350 1750 50  0001 C CNN "PartLink"
 	1    1350 1750
 	1    0    0    -1  
 $EndComp
