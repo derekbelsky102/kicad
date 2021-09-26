@@ -40,9 +40,9 @@ PA9
 Text Label 6700 3650 0    50   ~ 0
 PA10
 Text Label 6700 3750 0    50   ~ 0
-PA13
+PA13-SWDIO
 Text Label 6700 3850 0    50   ~ 0
-PA14
+PA14-SWCLK
 $Comp
 L power:GND #PWR08
 U 1 1 607E9570
@@ -292,9 +292,9 @@ PA7
 Text Label 3650 5850 0    50   ~ 0
 PA9
 Text Label 3650 5550 0    50   ~ 0
-PA13
+PA13-SWDIO
 Text Label 3650 5650 0    50   ~ 0
-PA14
+PA14-SWCLK
 Wire Wire Line
 	6400 5100 6950 5100
 Wire Wire Line

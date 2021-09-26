@@ -273,56 +273,45 @@ PC15-OSC32_OUT
 $Comp
 L Connector:Conn_01x10_Male J3
 U 1 1 60894859
-P 6200 5400
-F 0 "J3" H 6308 5981 50  0000 C CNN
-F 1 "Conn_01x10_Male" H 6308 5890 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 6200 5400 50  0001 C CNN
-F 3 "~" H 6200 5400 50  0001 C CNN
-	1    6200 5400
+P 3400 5350
+F 0 "J3" H 3508 5931 50  0000 C CNN
+F 1 "Conn_01x10_Male" H 3508 5840 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 3400 5350 50  0001 C CNN
+F 3 "~" H 3400 5350 50  0001 C CNN
+	1    3400 5350
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Conn_01x10_Male J2
-U 1 1 60898F4F
-P 2950 5450
-F 0 "J2" H 3058 6031 50  0000 C CNN
-F 1 "Conn_01x10_Male" H 3058 5940 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 2950 5450 50  0001 C CNN
-F 3 "~" H 2950 5450 50  0001 C CNN
-	1    2950 5450
-	1    0    0    -1  
-$EndComp
-Text Label 6950 5000 0    50   ~ 0
+Text Label 4150 4950 0    50   ~ 0
 PA0-CK_IN
-Text Label 6950 5100 0    50   ~ 0
+Text Label 4150 5050 0    50   ~ 0
 PA1
-Text Label 6950 5200 0    50   ~ 0
+Text Label 4150 5150 0    50   ~ 0
 PA2
-Text Label 6950 5300 0    50   ~ 0
+Text Label 4150 5250 0    50   ~ 0
 PA3
-Text Label 6950 5700 0    50   ~ 0
+Text Label 4150 5650 0    50   ~ 0
 PA7
-Text Label 3650 5850 0    50   ~ 0
+Text Label 6900 5800 0    50   ~ 0
 PA9
-Text Label 3650 5550 0    50   ~ 0
+Text Label 6900 5500 0    50   ~ 0
 PA13
-Text Label 3650 5650 0    50   ~ 0
+Text Label 6900 5600 0    50   ~ 0
 PA14
 Wire Wire Line
-	6400 5100 6950 5100
+	3600 5050 4150 5050
 Wire Wire Line
-	6400 5200 6950 5200
+	3600 5150 4150 5150
 Wire Wire Line
-	6400 5300 6950 5300
+	3600 5250 4150 5250
 Wire Wire Line
-	6400 5700 6950 5700
-Text Label 3650 5350 0    50   ~ 0
+	3600 5650 4150 5650
+Text Label 6900 5300 0    50   ~ 0
 PC14-OSC32IN
-Text Label 6950 5800 0    50   ~ 0
+Text Label 4150 5750 0    50   ~ 0
 PB1
-Text Label 3650 5450 0    50   ~ 0
+Text Label 6900 5400 0    50   ~ 0
 PB9-BOOT0
-Text Label 3650 5250 0    50   ~ 0
+Text Label 6900 5200 0    50   ~ 0
 PC15-OSC32_OUT
 $Comp
 L power:+3.3V #PWR04
@@ -343,31 +332,31 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR06
 U 1 1 6090C2FF
-P 4250 5700
-F 0 "#PWR06" H 4250 5550 50  0001 C CNN
-F 1 "+3.3V" H 4265 5873 50  0000 C CNN
-F 2 "" H 4250 5700 50  0001 C CNN
-F 3 "" H 4250 5700 50  0001 C CNN
-	1    4250 5700
+P 7500 5650
+F 0 "#PWR06" H 7500 5500 50  0001 C CNN
+F 1 "+3.3V" H 7515 5823 50  0000 C CNN
+F 2 "" H 7500 5650 50  0001 C CNN
+F 3 "" H 7500 5650 50  0001 C CNN
+	1    7500 5650
 	1    0    0    -1  
 $EndComp
-Text Label 3650 5150 0    50   ~ 0
+Text Label 6900 5100 0    50   ~ 0
 NRST
 $Comp
 L power:GND #PWR09
 U 1 1 6091C1DA
-P 6800 6100
-F 0 "#PWR09" H 6800 5850 50  0001 C CNN
-F 1 "GND" H 6805 5927 50  0000 C CNN
-F 2 "" H 6800 6100 50  0001 C CNN
-F 3 "" H 6800 6100 50  0001 C CNN
-	1    6800 6100
+P 4000 6050
+F 0 "#PWR09" H 4000 5800 50  0001 C CNN
+F 1 "GND" H 4005 5877 50  0000 C CNN
+F 2 "" H 4000 6050 50  0001 C CNN
+F 3 "" H 4000 6050 50  0001 C CNN
+	1    4000 6050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6800 5900 6800 6100
+	4000 5850 4000 6050
 Wire Wire Line
-	6400 5000 6950 5000
+	3600 4950 4150 4950
 $Comp
 L MCU_ST_STM32L0:STM32L031F6Px U2
 U 1 1 6087A076
@@ -520,43 +509,24 @@ NoConn ~ 2150 2600
 NoConn ~ 2150 2700
 NoConn ~ 2150 2800
 Wire Wire Line
-	3150 5950 4250 5950
+	3600 5550 4150 5550
 Wire Wire Line
-	4250 5700 4250 5950
-Wire Wire Line
-	6400 5600 6950 5600
-Wire Wire Line
-	6400 5400 6950 5400
-Text Label 6950 5600 0    50   ~ 0
+	3600 5350 4150 5350
+Text Label 4150 5550 0    50   ~ 0
 PA5
-Text Label 6950 5400 0    50   ~ 0
+Text Label 4150 5350 0    50   ~ 0
 PA4
 Wire Wire Line
-	6400 5500 6950 5500
-Text Label 6950 5500 0    50   ~ 0
+	3600 5450 4150 5450
+Text Label 4150 5450 0    50   ~ 0
 PA6
 Wire Wire Line
-	6400 5800 6950 5800
+	3600 5750 4150 5750
 Wire Wire Line
-	6400 5900 6800 5900
+	3600 5850 4000 5850
 Wire Wire Line
-	3150 5850 3650 5850
-Wire Wire Line
-	3150 5750 3650 5750
-Wire Wire Line
-	3150 5650 3650 5650
-Wire Wire Line
-	3150 5550 3650 5550
-Wire Wire Line
-	3150 5450 3650 5450
-Wire Wire Line
-	3150 5350 3650 5350
-Wire Wire Line
-	3150 5250 3650 5250
-Wire Wire Line
-	3650 5150 3150 5150
-NoConn ~ 3150 5050
-Text Label 3650 5750 0    50   ~ 0
+	6400 5800 6900 5800
+Text Label 6900 5700 0    50   ~ 0
 PA10
 Wire Wire Line
 	5150 3550 4450 3550
@@ -613,6 +583,36 @@ F 1 "AP7361C-33ER" H 3000 2401 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 3000 2475 50  0001 C CIN
 F 3 "https://www.diodes.com/assets/Datasheets/AP7361C.pdf" H 3000 2200 50  0001 C CNN
 	1    3000 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 5650 7500 5900
+Wire Wire Line
+	6400 5900 7500 5900
+NoConn ~ 6400 5000
+Wire Wire Line
+	6900 5100 6400 5100
+Wire Wire Line
+	6400 5200 6900 5200
+Wire Wire Line
+	6400 5300 6900 5300
+Wire Wire Line
+	6400 5400 6900 5400
+Wire Wire Line
+	6400 5500 6900 5500
+Wire Wire Line
+	6400 5600 6900 5600
+Wire Wire Line
+	6400 5700 6900 5700
+$Comp
+L Connector:Conn_01x10_Male J2
+U 1 1 60898F4F
+P 6200 5400
+F 0 "J2" H 6308 5981 50  0000 C CNN
+F 1 "Conn_01x10_Male" H 6308 5890 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x10_P2.54mm_Vertical" H 6200 5400 50  0001 C CNN
+F 3 "~" H 6200 5400 50  0001 C CNN
+	1    6200 5400
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
