@@ -745,10 +745,11 @@ $Comp
 L Connector:Conn_ARM_JTAG_SWD_10 J?
 U 1 1 61724BF9
 P 2600 6400
-F 0 "J?" H 2157 6446 50  0000 R CNN
-F 1 "Conn_ARM_JTAG_SWD_10" H 2157 6355 50  0000 R CNN
+F 0 "J?" H 2157 6491 50  0000 R CNN
+F 1 "Conn_ARM_JTAG_SWD_10" H 2157 6400 50  0000 R CNN
 F 2 "" H 2600 6400 50  0001 C CNN
-F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 2250 5150 50  0001 C CNN
+F 3 "https://www.adafruit.com/product/4048#description" V 2250 5150 50  0001 C CNN
+F 4 "4048" H 3150 5800 50  0000 R CNN "Part_Number"
 	1    2600 6400
 	1    0    0    -1  
 $EndComp
@@ -782,4 +783,6 @@ Wire Wire Line
 	2250 900  2600 900 
 Wire Wire Line
 	2600 900  2600 1100
+Text Notes 2100 1450 0    50   ~ 0
+V(f) = 2V\nI=V/R=3V/200=15mA
 $EndSCHEMATC
