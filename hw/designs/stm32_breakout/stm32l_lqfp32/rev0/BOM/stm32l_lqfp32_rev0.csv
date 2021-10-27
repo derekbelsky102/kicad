@@ -11,7 +11,7 @@ Reference, Value, Footprint, Datasheet, Part_Number
 "R3","UNPOP","Resistor_SMD:R_0805_2012Metric","~","UNPOP"
 "U1","LM3670MF-3.3","Package_TO_SOT_SMD:TSOT-23-5","http://www.ti.com/lit/ds/symlink/lm3670.pdf","LM3670MF-3.3"
 "C1","4.7uF","Capacitor_SMD:C_0805_2012Metric","~","TMK212ABJ475MG-T"
-"L1","10uH","Inductor_SMD:L_1210_3225Metric_Pad1.42x2.65mm_HandSolder","~"
+"L1","10uH","Inductor_SMD:L_1210_3225Metric_Pad1.42x2.65mm_HandSolder","https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=LB3218T100K%20%20&u=M","LB3218T100K"
 "C2","10uF","Capacitor_SMD:C_0805_2012Metric","~","JMK212ABJ106KG-T"
 "U2","STM32L010K4T6","QFP80P900X900X160-32N","https://www.st.com/resource/en/datasheet/stm32l010f4.pdf","STM32L010K4T6"
 "J4","Conn_01x13_Female","Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical","~","PREC013SAAN-RC"
