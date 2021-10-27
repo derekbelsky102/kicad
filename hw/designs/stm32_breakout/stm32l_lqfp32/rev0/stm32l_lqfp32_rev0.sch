@@ -172,7 +172,7 @@ P 9000 2200
 F 0 "U3" H 9444 2246 50  0000 L CNN
 F 1 "KC2016Z" H 9444 2155 50  0000 L CNN
 F 2 "Custom:KC2016Z" H 9150 2350 50  0001 C CNN
-F 3 "https://global.kyocera.com/prdct/electro/product/pdf/clock_z_xz_e.pdf" H 9150 2350 50  0001 C CNN
+F 3 "https://ele.kyocera.com/assets/products/crystal-device/clock_z_x_e.pdf" H 9150 2350 50  0001 C CNN
 F 4 "KC2016Z32.0000C15XXK" H 9500 1950 50  0000 C CNN "Part_Number"
 	1    9000 2200
 	1    0    0    -1  
@@ -338,7 +338,8 @@ P 3550 1850
 F 0 "L1" H 3550 2065 50  0000 C CNN
 F 1 "10uH" H 3550 1974 50  0000 C CNN
 F 2 "Inductor_SMD:L_1210_3225Metric_Pad1.42x2.65mm_HandSolder" H 3550 1850 50  0001 C CNN
-F 3 "~" H 3550 1850 50  0001 C CNN
+F 3 "https://ds.yuden.co.jp/TYCOMPAS/ut/detail?pn=LB3218T100K%20%20&u=M" H 3550 1850 50  0001 C CNN
+F 4 "LB3218T100K" H 3550 1850 50  0001 C CNN "Part_Number"
 	1    3550 1850
 	1    0    0    -1  
 $EndComp
@@ -678,7 +679,7 @@ U 1 1 616FDE00
 P 10000 4250
 F 0 "J4" H 10028 4276 50  0000 L CNN
 F 1 "Conn_01x13_Female" H 10028 4185 50  0000 L CNN
-F 2 "" H 10000 4250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical" H 10000 4250 50  0001 C CNN
 F 3 "~" H 10000 4250 50  0001 C CNN
 F 4 "PREC013SAAN-RC" H 9500 3550 50  0000 C CNN "Part_Number"
 	1    10000 4250
@@ -690,7 +691,7 @@ U 1 1 616FFFA6
 P 3050 4400
 F 0 "J3" H 3078 4426 50  0000 L CNN
 F 1 "Conn_01x13_Female" H 3078 4335 50  0000 L CNN
-F 2 "" H 3050 4400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical" H 3050 4400 50  0001 C CNN
 F 3 "~" H 3050 4400 50  0001 C CNN
 F 4 "PREC013SAAN-RC" H 2500 3750 50  0000 C CNN "Part_Number"
 	1    3050 4400
@@ -730,7 +731,7 @@ U 1 1 61724BF9
 P 2600 6400
 F 0 "J2" H 2157 6491 50  0000 R CNN
 F 1 "Conn_ARM_JTAG_SWD_10" H 2157 6400 50  0000 R CNN
-F 2 "" H 2600 6400 50  0001 C CNN
+F 2 "Custom:2X05_1.27MM_BOX_POSTS" H 2600 6400 50  0001 C CNN
 F 3 "https://www.adafruit.com/product/4048#description" V 2250 5150 50  0001 C CNN
 F 4 "4048" H 3150 5800 50  0000 R CNN "Part_Number"
 	1    2600 6400
@@ -771,10 +772,10 @@ V(f) = 2V\nI=V/R=3V/200=15mA
 Text Notes 2800 5850 0    50   ~ 0
 TODO: Add Cable assembly for 20pin to 10pin cable
 $Comp
-L pspice:CAP C?
+L pspice:CAP C7
 U 1 1 6165B9B5
 P 4550 1400
-F 0 "C?" H 4728 1446 50  0000 L CNN
+F 0 "C7" H 4728 1446 50  0000 L CNN
 F 1 "100nF" H 4728 1355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4550 1400 50  0001 C CNN
 F 3 "~" H 4550 1400 50  0001 C CNN
