@@ -1,5 +1,9 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP Atmega32U4_DevBoard
+F https://learn.sparkfun.com/tutorials/pro-micro--fio-v3-hookup-guide/all
+$ENDCMP
+#
 $CMP KC2016Z
 D 1.8432MHz ~ 125MHz Crystal Oscillator
 K xo
